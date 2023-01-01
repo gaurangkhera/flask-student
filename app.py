@@ -38,6 +38,8 @@ def home():
         linear = pickle.load(pickle_in)
         prd = linear.predict(x_test)
         for i in range(len(prd)):
+            if prd[i] > 100:
+                prd[i] = 100
             page_data = 'Predicted final grade:', prd[i], 'Data: ',x_test[i]
     return render_template('index.html', form=form, data=page_data)
 

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+<center>
+    <form action="/" method="post" class="container-fluid mt-2" enctype="multipart/form-data">
+        {{form.hidden_tag()}}
+        {{form.csrf_token}}
+        {{form.g1(class='form-control', placeholder='grade 1')}}
+        {{form.g2(class='form-control', placeholder='grade 2')}}
+        {{form.studytime(class='form-control', placeholder='study time (in hours)')}}
+        {{form.failures(class='form-control', placeholder='failures')}}
+        {{form.absences(class='form-control', placeholder='absences')}}
+        {{form.freetime(class='form-control', placeholder='free time(in hours)')}}
+        {{form.submit(class='btn btn-primary')}}
+    </form>
+        {{data}}
+</center>
+{% endblock %}

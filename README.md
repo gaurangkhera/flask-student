@@ -2,12 +2,12 @@
 Predicts a student's final grade using data like free time, study time and previous marks using linear regression (y=mx+b).
 
 # Dependencies
-Numpy
-Pandas
-SKlearn
-Flask
-Flask-WTF
-Flask-login
+Numpy<br>
+Pandas<br>
+SKlearn<br>
+Flask<br>
+Flask-WTF<br>
+Flask-login<br>
 Please see requirements.txt for more information.
 
 # Model used
